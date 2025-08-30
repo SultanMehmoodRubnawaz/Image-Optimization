@@ -47,7 +47,7 @@ export default function Home() {
               </h2>
               <p className="text-black text-justify">
                 In terms of digital files, compression is the act of encoding
-                information using fewer bits than what’s found in the original
+                information using fewer bits than what&apos;s found in the original
                 file. Simply put, it means converting a large file into a
                 smaller file.
               </p>
@@ -90,14 +90,14 @@ export default function Home() {
                 overall quality.
               </p>
               <p className="text-black text-justify">
-                To begin, you’ll need to upload some images you’d like to
+                To begin, you&apos;ll need to upload some images you&apos;d like to
                 compress. You can upload up to 20 images at once and you can
                 feel free to mix and match file types. Our server can
                 automatically parse out the files for you.
               </p>
               <p className="text-black text-justify">
                 First, hit the “Upload Files” button and navigate to your
-                images. Once uploaded, you’ll see thumbnails for all your images
+                images. Once uploaded, you&apos;ll see thumbnails for all your images
                 arriving in the queue.
               </p>
               <p className="text-black text-justify">
@@ -114,7 +114,7 @@ export default function Home() {
                 Is it safe to compress images?
               </h2>
               <p className="text-black text-justify">
-                Your original files stay untouched on your system. If you don’t
+                Your original files stay untouched on your system. If you don&apos;t
                 like the compressed version, you can retry. Also, our unmanned
                 system purges all data after one hour for security.
               </p>
