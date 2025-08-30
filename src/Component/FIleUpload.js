@@ -32,9 +32,23 @@ const FileUpload = () => {
     setSelectedImage(null);
   }
 
+  // Download All
+  function handleDownloadAll() {
+    if (!files || files.length === 0) return;
+
+    files.forEach((file) => {
+      const link = document.createElement("a");
+      link.href = file.preview;
+      link.download = file.file.name;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  }
+
   return (
     <>
-      <div className="flex flex-col items-center justify-between border-2 border-[#F2F2F2] rounded-md shadow-md w-full max-w-3xl mx-auto p-4 space-y-6">
+      <div className="flex flex-col items-center justify-between border-2 border-[#F2F2F2] rounded-md shadow-md w-full max-w-3xl mx-auto p-4 space-y-6 py-10 mt-5 mb-5">
         {/* Top Buttons */}
         <div className="flex space-x-4">
           {/* Hidden Input file */}
@@ -93,9 +107,7 @@ const FileUpload = () => {
         {/* Bottom Button */}
         <button
           className="flex items-center gap-2 bg-[#38404B] hover:bg-[#2c323a] text-white px-4 py-2 rounded-md"
-          onClick={() => {
-            files && files.length > 0 && console.log("Downloading all files...");
-          }}
+          onClick={handleDownloadAll}
         >
           ⬇ DOWNLOAD ALL{" "}
           <span className="ml-1 bg-gray-700 px-2 py-0.5 rounded-full text-xs">
