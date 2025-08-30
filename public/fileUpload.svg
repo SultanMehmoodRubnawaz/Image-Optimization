@@ -1,0 +1,8 @@
+<svg class="drop-caption__border" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <defs>
+              <clipPath id="rectMask">
+                <rect fill="#000" x="0" y="0" width="100%" height="100%" rx="10" ry="10"></rect>
+              </clipPath>
+            </defs>
+            <rect width="100%" height="100%" rx="10" ry="10" fill="none" clip-path="url(#rectMask)"></rect>
+          </svg>
