@@ -1,9 +1,11 @@
 import FIleUpload from "@/Component/FIleUpload";
+import Note from "@/Component/Note";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
+    <Note/>
       <div className="flex flex-col lg:flex-row pt-10 px-4 lg:px-20">
         {/* Left Spacer (Hidden on mobile) */}
         <div className="hidden lg:flex lg:w-2/12"></div>
